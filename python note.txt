@@ -1,0 +1,95 @@
+machine learning
+
+
+Machine Learning is making the computer learn from studying data and statistics.
+
+Machine Learning is a step into the direction of artificial intelligence (AI).
+
+Machine Learning is a program that analyses data and learns to predict the outcome.
+
+for example
+imaging you are ask to write a program to identify images of cats,dogs, rabbit 
+using traditional programming technique you make 
+need to write rules alot of codes to look for edges curves colour pattern and all that, 
+what if in the future you are given a new animal to identify and its a black and white image
+you are going to have to rewrite all your rules again and that is very stressful
+
+so with machine learning it is made easy
+
+we build a model or an engine and gives it lots and lots of data can be tens of thousand
+ of picture of images (i.e for cats and dogs or a rabbit)
+our model will then find and learn patterns in the input data
+#so if we gove is a new picture of a cat or a dog or a horse its going to tell us with 
+certain level of accuracy #so the more data we input the more accuracy it will give us
+
+
+machine learning has other applications such as
+*self driving cars
+*robotics
+*language processing
+*vision processing
+*forecasting stock market trends /weather
+
+
+
+machine learning projects involves a number of steps
+1. import the data (ususally CSV file)
+2. clean the data (remove bug:duplicates or incomplete)
+if they are alphabet we need to convert them to numerica values 
+else we get wrong results 
+it depens on the kind of data we are working with 
+3. split the data into two segment: (1)training (2)testing
+#you can reserve 80% for taining and 20% for testing 
+
+4.create a model
+this involve selecting an algorithm to analyse our data
+there are so different types of algorithm 
+such as 
+decision trace, neuronetwrk etc
+each algorithm has its props and cons in terms of accuracy
+and performance so the algorithm u choose depending on the 
+problem you are trying to solve and ur input data
+
+there are libraries that u can use out there that provide this 
+algorithm  eg scikit-learn
+
+5. train the model
+so we feed it our training data our modell will look 
+for partterns in the data
+
+6.make prediction
+we ask our model to make prediction #it may not be accurate as 
+u start 
+7. evaluate and improve
+we eveluate the prediction and make sure they are accurate
+then we need to get back to our model to either select another
+algorithm that is going to produce a more better result for 
+the kind of problem we are trying to solve or 
+fine-tune the parameters of our model
+each algorithm has parameters has we can modify to 
+optimize the accuracy
+__________________________________________________________________
+
+
+Next is to look at the libraries and tool for machine learning
+
+Libraries 
+lets look at some popular libraries
+1. Numpy- it provide multi-dimentional arrays
+2. Pandas - it is a data analysis library, that provide 
+a concept called data-frame
+A data-frame is a two dimentional structure similar 
+to an excel spreadsheet: so we have rows and columns
+we can select data in a row or column or range of rows and column
+
+3.MatPlotLib- it a two dimentional plotting library 
+for creating graphs and plots
+
+4.Scikit-Learn:- which is one of the most popular 
+machine learning library that provide common algorithm such as 
+decision-tree, neuro-netwrk and so on
+
+
+
+we use jupital bcoz we frequently need to inspect the data and 
+its very hard in vs code and terminals 

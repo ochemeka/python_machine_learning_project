@@ -1,0 +1,30 @@
+ pip install chatterbot  
+
+go to setting and install the version of chatterbot 1.0.0 compactable for your project
+
+pip install db-sqlite3
+pip install pytz
+
+if you have this error
+AttributeError: module 'time' has no attribute 'clock'
+
+ Open open the file <Python-folder>\Lib\site-packages\sqlalchemy\util\compat.py Go to line 264 which states
+if win32 or jython:
+    time_func = time.clock
+    
+else:
+    time_func = time.time
+
+Change it to:
+if win32 or jython:
+    #time_func = time.clock
+    pass
+else:
+    time_func = time.time
+
+
+Chatterbot Module Error ("AttributeError: module 'collections' has no attribute 'Hashable'")
+Go to line 126 in C:\Users\robin\AppData\Local\Programs\Python\Python310\lib\site-packages\yaml\constructor.py and change: collections.Hashable to collections.abc.Hashable
+
+
+change: collections.Hashable to collections.abc.Hashable

@@ -1,0 +1,8 @@
+#pip install pywhatkit
+# pls ensure you install in the visual environment of the file
+# becox it hass many dependecies
+
+# we import
+import pywhatkit
+
+pywhatkit.sendwhatmsg()

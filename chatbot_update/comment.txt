@@ -1,0 +1,5 @@
+pip install Flask torch torchvision nltk 
+#nltk means Natural Language Toolkit
+
+python train.py
+

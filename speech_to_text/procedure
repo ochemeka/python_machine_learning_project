@@ -1,0 +1,29 @@
+import requests
+filename = "/path/to/foo.wav"
+def read_file(filename, chunk_size=5242880):
+    with open(filename, 'rb') as _file:
+        while True:
+            data = _file.read(chunk_size)
+            if not data:
+                break
+            yield data
+
+headers = {'authorization': "YOUR-API-TOKEN"}
+response = requests.post('https://api.assemblyai.com/v2/upload',
+                        headers=headers,
+                        data=read_file(filename))
+
+print(response.json())
+
+
+###### second step
+
+import requests
+endpoint = "https://api.assemblyai.com/v2/transcript"
+json = { "audio_url": "https://bit.ly/3yxKEIY" }
+headers = {
+    "authorization": "YOUR-API-TOKEN",
+    "content-type": "application/json"
+}
+response = requests.post(endpoint, json=json, headers=headers)
+print(response.json()
